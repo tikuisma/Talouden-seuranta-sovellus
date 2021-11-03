@@ -6,5 +6,5 @@
 
 # Viikko 1
 
-# gitlog.txt https://github.com/tikuisma/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt
+[gitlog.txt](gitlog.txt https://github.com/tikuisma/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
