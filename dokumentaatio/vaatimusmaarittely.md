@@ -11,6 +11,7 @@ Sovelluksen käyttäjänä olisi tarkoitus toimia vain yksi käyttäjärooli eli
 
 ## Käyttöliittymäluonnos
 Sovellus koostuu viidestä eri näkymästä, luonnos:
+![kayttoliittyma](https://user-images.githubusercontent.com/93583969/141856907-52476686-e02b-4aac-bdc2-5d2b0a59ac5a.jpg)
 
 Sovelluksen käynnistäessä olisi ensin tarkoitus tulla käyttäjän kirjautumisnäkymä, jonka jälkeen jo rekisteröitynyt käyttäjä laittaa käyttäjätunnuksena ja kirjautuu sisään tai rekisteröimätön käyttäjä ensin rekisteröityy ja sitten kirjautuu sisään juuri luomallaan tunnuksella. Kirjautumisen jälkeen käyttäjälle avautuu näkymä, jossa on listattuna tulot, menot ja tilastot. Näistä tuloihin ja menoihin käyttäjä saa vetolaatikosta valita itselleen sopivan kategorian ja lisätä kuukauden sekä vuoden ja laittaa summan. Tilastoista nähdään kuukausittainen balanssi eli tulojen ja menojen yhteensovitus sekä kategoriat joihin rahaa on kulunut kuukauden aikana.
 
