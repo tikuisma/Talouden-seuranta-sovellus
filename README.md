@@ -1,8 +1,8 @@
 # Ohjelmistotekniikka
 
-- On **yksi** *tietojenkäsittelytieteen* kursseista.
+- 5 opintopisteen *tietojenkäsittelytieteen* kurssi.
 
-- 5 opintopistettä
+- Kurssilla on tarkoituksena tehdä oma harjoitustyö. Harjoitustyöni on käyttäjän **talouden seurantaan** liittyvä sovellus.
 
 ## Tuntikirjanpito
 Harjoitustyön tuntikirjanpidon seuranta: [tuntikirjanpito](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
