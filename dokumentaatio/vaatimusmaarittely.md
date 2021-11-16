@@ -42,3 +42,4 @@ Sovelluksen käynnistäessä olisi ensin tarkoitus tulla käyttäjän kirjautumi
 	- Päivämäärät esim. lisätessä menoja.
 	- Päänäkymästä pystyisi siirtymään osioon, jossa näkyisi kaikki asetetut tulot ja menot aikajärjestyksessä.
 	- Käyttäjä saisi itse lisätä kategoriavalikkoon muutaman vaihtoehdon.
+	- Käyttäjä tarvitsisi sisäänkirjautuessa myös salasanan.
