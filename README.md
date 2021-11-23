@@ -12,6 +12,8 @@ Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohje
 
 1. Asenna riippuvuudet komennolla: *poetry install*
 
+2. Käynnistä virtuaaliympäristö komennolla: *poetry shell*
+
 2. Käynnistä sovellus komennolla: *poetry run invoke start*
 
 
@@ -22,7 +24,7 @@ Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohje
 
 ### Ohjelman testaus
 
-- Testit suoritetaan komennolla: *poetry run invoke start*
+- Testit suoritetaan komennolla: *poetry run invoke test*
 
 ### Testikattavuus
 
