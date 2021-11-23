@@ -1,22 +1,11 @@
-# Ohjelmistotekniikka
+# Talouden seuranta -sovellus
 
-- 5 opintopisteen *tietojenkäsittelytieteen* kurssi.
+Tarkoituksena tehdä sovellus, jossa käyttäjä pystyy sekä lisäilemään menoja että tuloja eli seurata omaa taloudellista tilannetta. Sovellusta voi käyttää useampi käyttäjätunnuksen luonut henkilö. Käyttäjätunnukselle tallentuu kaikki käyttäjän tekemät lisäykset.
 
-- Kurssilla on tarkoituksena tehdä oma harjoitustyö. Harjoitustyöni on käyttäjän **talouden seurantaan** liittyvä sovellus.
+Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohjelmistotekniikka-kurssia.
 
-## Tuntikirjanpito
-Harjoitustyön tuntikirjanpidon seuranta: [tuntikirjanpito](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
-
-## Viikko 1
-
-[gitlog.txt](https://github.com/tikuisma/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
-
-[komentorivi.txt](https://github.com/tikuisma/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
-
-## Viikko 2
-
-Harjoitustyön vaatimusmäärittely: [Vaatimusmäärittely](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
-
-Viikko 2:n [testikattavuus-tehtävä](https://github.com/tikuisma/ot-harjoitustyo/blob/master/laskarit/viikko2/laskarivk2_ss.png)
+## Dokumentaatio
+- [Tuntikirjanpito](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+- [Vaatimusmäärittely](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 

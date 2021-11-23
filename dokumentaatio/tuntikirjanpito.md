@@ -2,4 +2,7 @@
 # Tuntikirjanpito
 ________________
 
-**15.11.-21:**	Vaatimusmäärittelydokumentin tekeminen, *4 tuntia*
+| **Pvm** | **Tehtävä** | **Tunnit** |
+| ------- | ----------- | ---------- |
+| 15.11.-21 | Vaatimusmäärittelydokumentti | *4 tuntia* |
+| 21.11.-21 | Koodin runko | *15 tuntia* |
