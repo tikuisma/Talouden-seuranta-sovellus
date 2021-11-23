@@ -9,4 +9,4 @@ class TestLog_in(unittest.TestCase):
 		user = "kissa"
 		answer = "Your account has been created. Next please log in."
 		self.assertEqual(new_user_creation(user), answer)
-		self.assertEqual(user_login(user), "")
+		self.assertEqual(user_login(user), "Signing in")

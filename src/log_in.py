@@ -28,4 +28,4 @@ def user_login(username):
     if username not in users:
         return "User not found. Please check spelling or create new user."
     elif username in users:
-        return ""
+        return "Signing in"

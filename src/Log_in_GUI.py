@@ -27,17 +27,22 @@ class Log_in_GUI:
         self.log_in_screen.mainloop()  
 
     def new_user(self):
+        """
+        Kutsuu toista funktiota, joka luo käyttäjätunnuksen.
+        """
         self.user = str(self.username_field.get())
         self.pop_notice = new_user_creation(self.user)
         
-
+        """
+        Palauttaa graafisen käyttöliittymän sisäänkirjautumisnäkymään tekstin.
+        """
         self.pop_up_field = Label(self.log_in_screen, text=self.pop_notice)
         self.pop_up_field.place(x=125, y=100)
           
     def login(self):
         self.user = str(self.username_field.get())
         self.pop_notice = user_login(self.user)
-        if self.pop_notice == "":
+        if self.pop_notice == "Signing in":
             self.log_in_screen.destroy()
         else:
             self.pop_up_field = Label(self.log_in_screen, text=self.pop_notice)

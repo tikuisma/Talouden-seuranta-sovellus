@@ -28,5 +28,6 @@ Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohje
 
 ### Testikattavuus
 
-- Testikattavuusraportin voi generoida komennolla: *poetry run invoke coverage-report*
+- Testikattavuusraportin voi generoida **src-hakemiston sisällä** komennolla: *poetry run invoke coverage-report*
+- Raportin tekeminen ei onnistu ot-harjoitustyo -hakemiston alla
 - Raportti generoituu htmlcov-hakemistoon.

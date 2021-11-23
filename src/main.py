@@ -5,7 +5,7 @@ from Log_in_GUI import *
 
 def Main(): #kutsutaan funktioita, päätietokantakutsut ym.
     Login = Log_in_GUI()
-    if Login.pop_notice == "":
+    if Login.pop_notice == "Signing in":
         GUI(Login.user)
 
 #Tietokannat vielä puuttuvat
