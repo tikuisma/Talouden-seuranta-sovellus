@@ -7,6 +7,7 @@ Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohje
 ## Dokumentaatio
 - [Tuntikirjanpito](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 - [Vaatimusmäärittely](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+- [Arkkitehtuurikuvaus](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 ## Asennus
 
@@ -22,7 +23,7 @@ Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohje
 
 - Ohjelman pystyy suorittamaan komennolla: ```poetry run invoke start```
 
-### Ohjelman testaus
+### Ohjelman testaus: TESTAUS EI TOIMI!!
 
 - Testit suoritetaan komennolla: ```poetry run invoke test```
 

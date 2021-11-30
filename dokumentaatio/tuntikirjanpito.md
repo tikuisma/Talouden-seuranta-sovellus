@@ -10,7 +10,9 @@ ________________
 | 23.11.-21 | Ensimmäisten testien tekemistä, Githubin pääsivun päivitys ja tiedostojen lisäys | *2 tuntia* | 
 | 28.11.-21 | SQL3-liten harjoittelemista ja projektiin hyödyntämistä | *3 tuntia* |
 | 29.11.-21 | Tietokannan tekemistä, Pylintiin tutustumista | *8 tuntia* |
-|           | Työn jakaminen eri alihakemistoihin, testien tekemistä  | *2 tuntia* |
-| 30.11.-21 | Vaatimusmäärittelyn päivittäminen ajantasalle | *1 tunti* |
-
-|           |                        | *yht. 28 tuntia * |
+|           | Työn jakaminen eri alihakemistoihin, testien ongelmien selvittelyä  | *4 tuntia* |
+| 30.11.-21 | Työn toiminnan takaaminen terminaalissa, testien ongelmien selvittely jatkuu | *4 tuntia* |
+|  | .gitignore-kansioiden selvittelyä ja kansioiden järjestämistä | *2 tuntia* |
+|  | Vaatimusmäärittelyn päivittäminen ajantasalle | *1 tunti* |
+|  | Pakkauskaavion tekeminen | *1 tunti* |
+|           |                        | *yht. 39 tuntia * |
