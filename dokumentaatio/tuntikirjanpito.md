@@ -15,4 +15,4 @@ ________________
 |  | .gitignore-kansioiden selvittelyä ja kansioiden järjestämistä | *2 tuntia* |
 |  | Vaatimusmäärittelyn päivittäminen ajantasalle | *1 tunti* |
 |  | Pakkauskaavion tekeminen | *1 tunti* |
-|           |                        | *yht. 39 tuntia * |
+|           |                        | *yht. 39 tuntia* |
