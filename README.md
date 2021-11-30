@@ -10,24 +10,24 @@ Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohje
 
 ## Asennus
 
-1. Asenna riippuvuudet komennolla: *poetry install*
+1. Asenna riippuvuudet komennolla: **poetry install**
 
-2. Käynnistä virtuaaliympäristö komennolla: *poetry shell*
+2. Käynnistä virtuaaliympäristö komennolla: **poetry shell**
 
-2. Käynnistä sovellus komennolla: *poetry run invoke start*
+3. Käynnistä sovellus komennolla: **poetry run invoke start**
 
 
 ## Komentorivitoiminnot
 ### Ohjelman suorittaminen
 
-- Ohjelman pystyy suorittamaan komennolla: *poetry run invoke start*
+- Ohjelman pystyy suorittamaan komennolla: **poetry run invoke start**
 
 ### Ohjelman testaus
 
-- Testit suoritetaan komennolla: *poetry run invoke test*
+- Testit suoritetaan komennolla: **poetry run invoke test**
 
 ### Testikattavuus
 
-- Testikattavuusraportin voi generoida **src-hakemiston sisällä** komennolla: *poetry run invoke coverage-report*
+- Testikattavuusraportin voi generoida **src-hakemiston sisällä** komennolla: **poetry run invoke coverage-report**
 - Raportin tekeminen ei onnistu ot-harjoitustyo -hakemiston alla
 - Raportti generoituu htmlcov-hakemistoon.

@@ -1,14 +1,12 @@
-from person import Person
-from log_in import *
-from GUI import *
-from Log_in_GUI import *
+from services.log_in import *
+from ui.gui import *
+from ui.log_in_gui import *
 
-def Main(): #kutsutaan funktioita, päätietokantakutsut ym.
+def Main(): 
+    '''Kutsutaan funktioita'''
     Login = Log_in_GUI()
     if Login.pop_notice == "Signing in":
         GUI(Login.user)
-
-#Tietokannat vielä puuttuvat
 
 if __name__ == "__main__":
     Main()

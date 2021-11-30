@@ -20,13 +20,11 @@ def new_user_creation(username):
 
 def user_login(username):
     """
-    Tarkistetaan sisäänkirjautumistila eli sisäänkirjautumisen onnistuminen
-    käyttäjätunnuksella.
+    Tarkistetaan sisäänkirjautumistila eli sisäänkirjautumisen onnistuminen käyttäjätunnuksella.
     Args: 
         username: Käyttäjänimi käyttöliittymästä.
     Returns:
-        Palauttaa tyhjän, mikäli onnistunut sisäänkirjautuminen. Palauttaa
-        viestin, mikäli käyttäjätunnusta
+        Palauttaa tyhjän, mikäli onnistunut sisäänkirjautuminen. Palauttaa viestin, mikäli käyttäjätunnusta
         ei löytynyt.
     """
     if database.user_doesnt_exists(username):
