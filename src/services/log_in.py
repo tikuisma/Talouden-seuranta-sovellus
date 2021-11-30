@@ -25,8 +25,8 @@ def user_login(username):
     Args: 
         username: Käyttäjänimi käyttöliittymästä.
     Returns:
-        Palauttaa tyhjän, mikäli onnistunut sisäänkirjautuminen. Palauttaa
-        viestin, mikäli käyttäjätunnustanei löytynyt.
+        Palauttaa viestin, mikäli onnistunut sisäänkirjautuminen. Palauttaa
+        viestin, mikäli käyttäjätunnusta ei löytynyt.
     """
     if database.user_doesnt_exists(username):
         return "User not found. Please check spelling or create new user."

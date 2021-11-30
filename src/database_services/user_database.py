@@ -2,10 +2,10 @@ import sqlite3
 class UserDatabase:
     def __init__(self):
         '''SQLite3:n tietokannan luonti'''
-        self.database = sqlite3.connect('./data/users.db')
+        self.database = sqlite3.connect('./users.db')
         self.dcursor = self.database.cursor()
-       # self.dcursor.execute('''CREATE TABLE IF NOT EXISTS
-       #  Users (username TEXT)''')
+        self.dcursor.execute('''CREATE TABLE IF NOT EXISTS
+        Users (username TEXT)''')
 
     def writing_database_username(self, username):
         '''Saa usernamen ja tämä syötetään omaan tietokanta-tauluun.'''

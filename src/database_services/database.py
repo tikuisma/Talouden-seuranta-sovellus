@@ -1,9 +1,10 @@
 import sqlite3
+import os.path
 class Database:
     def __init__(self):
         '''Luodaan SQLite3:n tietokanta-taulu, johon merkitään username,
         income/expense, category, month, year ja amount'''
-        self.database = sqlite3.connect('./data/database.db')
+        self.database = sqlite3.connect('./database.db')
         self.dcursor = self.database.cursor()
         self.dcursor.execute('''CREATE TABLE IF NOT EXISTS Database
          (username TEXT,
