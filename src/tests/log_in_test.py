@@ -1,7 +1,7 @@
 import unittest
 from services.log_in import new_user_creation, user_login
 
-class TestLog_in(unittest.TestCase):
+class Testlog_in(unittest.TestCase):
 	def setUp(self):
 		print("Set up goes here")
 	
