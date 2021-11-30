@@ -23,6 +23,13 @@ Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohje
 
 - Ohjelman pystyy suorittamaan komennolla: ```poetry run invoke start```
 
+### Koodin laadun tarkistaminen
+
+- Koodin laadun pystyy tarkastamaan:
+	1. ensin komento: ```poetry shell```
+	2. komento: ```pylint src```
+- Koodin tämänhetkinen pisteytys on 7.17/10 
+
 ### Ohjelman testaus: TESTAUS EI TOIMI!!
 
 - Testit suoritetaan komennolla: ```poetry run invoke test```
