@@ -7,12 +7,11 @@ Sovelluksella käyttäjät pystyvät pitämään kirjaa tuloista ja menoista eli
 
 ## Käyttäjät
 Sovelluksen käyttäjänä olisi tarkoitus toimia vain yksi käyttäjärooli eli ns. normaali käyttäjä. 
-![Vaatimusmäärittelyluonnos](https://user-images.githubusercontent.com/93583969/145101911-834817d1-7e65-4f0c-b586-16e6c601be02.jpg)
 
 
 ## Käyttöliittymäluonnos
 Sovellus koostuu kolmesta eri näkymästä, suuntaa antava luonnos ohessa:
-
+![Vaatimusmäärittelyluonnos](https://user-images.githubusercontent.com/93583969/145101911-834817d1-7e65-4f0c-b586-16e6c601be02.jpg)
 Sovelluksen käynnistäessä olisi ensin tarkoitus tulla käyttäjän kirjautumisnäkymä, jonka jälkeen jo rekisteröitynyt käyttäjä laittaa käyttäjätunnuksensa ja kirjautuu sisään tai rekisteröimätön käyttäjä ensin rekisteröityy ja sitten kirjautuu sisään juuri luomallaan tunnuksella. Tässä näkymässä pystyy siis luomaan sekä käyttäjän että jo luotu käyttäjä pystyy sisäänkirjautumaan. Kirjautumisen jälkeen käyttäjälle avautuu näkymä, jossa käyttäjä voi lisätä itselleen menon ja/tai tulon. Kun käyttäjä haluaa tallentaa tulon/menon, ilmestyy näkyviin vielä uusi näkymä, jossa käyttäjältä varmistetaan vielä haluttu tallennus. Tällä yritetään minimoida käyttäjän tekemät vahinkopainallukset sekä se antaa käyttäjälle vielä mahdollisuuden tarkistaa tiedot, joita ollaan tallentamassa. Tuloihin ja menoihin käyttäjä saa ennen tallentamista valita vetolaatikoista itselleen sopivan kategorian ja lisätä kuukauden sekä vuoden ja laittaa summan. Kaikki kohdat tulee täyttää, muutoin sovellus ei anna käyttäjän tallentaa tietoja. Tilastoista nähdään kuukausittainen balanssi eli tulojen ja menojen yhteensovitus sekä kategoriat joihin rahaa on kulunut kuukauden aikana.
 
 
