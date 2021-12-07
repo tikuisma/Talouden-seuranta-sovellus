@@ -38,3 +38,7 @@ Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohje
 
 - Testikattavuusraportin voi generoida komennolla: ```poetry run invoke coverage-report```
 - Raportti generoituu htmlcov-hakemistoon.
+
+### Release
+
+[Release](https://github.com/tikuisma/ot-harjoitustyo/releases/tag/viikko5)
