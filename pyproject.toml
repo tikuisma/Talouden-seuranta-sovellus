@@ -8,6 +8,7 @@ authors = ["Tiina <tiina.kuisma@helsinki.fi>"]
 python = "^3.8"
 invoke = "^1.6.0"
 python-dotenv = "^0.19.2"
+matplotlib = "^3.5.0"
 
 [tool.poetry.dev-dependencies]
 coverage = "^6.1.2"
