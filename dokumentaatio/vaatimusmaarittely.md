@@ -7,6 +7,7 @@ Sovelluksella käyttäjät pystyvät pitämään kirjaa tuloista ja menoista eli
 
 ## Käyttäjät
 Sovelluksen käyttäjänä olisi tarkoitus toimia vain yksi käyttäjärooli eli ns. normaali käyttäjä. 
+![Vaatimusmäärittelyluonnos](https://user-images.githubusercontent.com/93583969/145101911-834817d1-7e65-4f0c-b586-16e6c601be02.jpg)
 
 
 ## Käyttöliittymäluonnos
