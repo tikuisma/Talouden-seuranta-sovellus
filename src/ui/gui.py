@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter.ttk import Combobox
 from database_services.database import Database
 from ui.confirm_window import ConfirmingWindow
+from ui.statistics import Statistics
 
 class GUI:
     """
@@ -35,7 +36,7 @@ class GUI:
         "Pets","Shopping","Fun","Restaurants/bars","Investments")
         self.cb2 = Combobox(self.window, values= self.expense_category)
         self.cb2.place(x=300, y=105)
-        
+
         self.total_lbl = Label(self.window, text= "Amount:")
         self.total_lbl.place(x=130, y=135)
         self.total_field = Entry(self.window, text="")
@@ -57,7 +58,28 @@ class GUI:
 
         self.pop_up_field = Label(self.window, text="")
         self.pop_up_field.place(x=75, y=5)
-        
+
+        self.statistics_lbl = Label(self.window, text='''Search your expense-statistics here:''')
+        self.statistics_lbl.place(x = 130, y = 290)
+
+        self.month_statistics_lbl = Label(self.window, text="Month:")
+        self.month_statistics_lbl.place(x=50, y=320)
+        self.month_statistics_data = ("January","February","March","April","May","June",
+        "July","August","September","Octobec","November","December")
+        self.cb5 = Combobox(self.window, values= self.month_statistics_data)
+        self.cb5.place(x=50, y=340)
+
+        self.year_statistics_lbl = Label(self.window, text="Year:")
+        self.year_statistics_lbl.place(x=250, y=320)
+        self.year_statistics_data = (2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028,
+        2029, 2030, 2031, 2032)
+        self.cb6 = Combobox(self.window, values= self.year_statistics_data)
+        self.cb6.place(x=250, y=340)
+
+        self.statistic_btn = Button(self.window, text="Go to statistics",
+        command=self.statistics_button)
+        self.statistic_btn.place(x=150, y=365)
+
         self.window.mainloop()
 
     def income(self):
@@ -74,8 +96,8 @@ class GUI:
 
     def saving_income_expense(self, income_expense, category):
         '''Tarkistetaan, että käyttäjä on täyttänyt vaadittavat tiedot.'''
-        invalid_pop_notice = '''Check that you have chosen all of 
-        the categorys and added amount.'''
+        invalid_pop_notice = '''Check that you have chosen all of
+        the categorys, added amount and you are clicking right button.'''
         amount_pop_notice = "Amount needs to be given with numbers."
         total = self.total_field.get()
         month = self.cb3.get()
@@ -92,3 +114,8 @@ class GUI:
             varmistamaan vielä tallennus tietokantaan.'''
             ConfirmingWindow(self.user, income_expense, category,
             month, year, total)
+
+    def statistics_button(self):
+        st_month = self.cb5.get()
+        st_year = self.cb6.get()
+        Statistics(Database(),self.user, st_month, st_year)

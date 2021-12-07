@@ -3,7 +3,7 @@ database = UserDatabase()
 def new_user_creation(username):
     """
     Luodaan uusi käyttäjä ja tarkistetaan, että käyttäjävaatimukset täyttyvät.
-    Args: 
+    Args:
         username: Käyttäjänimi käyttöliittymästä.
     Returns:
         Palauttaa käyttöliittymän viestin siitä
@@ -13,9 +13,9 @@ def new_user_creation(username):
         len(username) <= 12 and len(username) >= 4:
         database.writing_database_username(username)
         return "Your account has been created. Next please log in."
-    elif not database.user_doesnt_exists(username):
+    if not database.user_doesnt_exists(username):
         return "Username is already taken. Try another one."
-    elif len(username) > 12 or len(username) < 4:
+    if len(username) > 12 or len(username) < 4:
         return "Check your usernames length requirements and try again."
 
 def user_login(username):
@@ -30,5 +30,5 @@ def user_login(username):
     """
     if database.user_doesnt_exists(username):
         return "User not found. Please check spelling or create new user."
-    elif not database.user_doesnt_exists(username):
+    if not database.user_doesnt_exists(username):
         return "Signing in"

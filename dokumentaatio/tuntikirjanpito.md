@@ -15,4 +15,9 @@ ________________
 |  | .gitignore-kansioiden selvittelyä ja kansioiden järjestämistä | *2 tuntia* |
 |  | Vaatimusmäärittelyn päivittäminen ajantasalle | *1 tunti* |
 |  | Pakkauskaavion tekeminen | *1 tunti* |
-|           |                        | *yht. 39 tuntia* |
+| 3.12.-21 | Harjoitustyön koodin kasvatus, tietokantakutsujen onnistuminen "oikein" | *4 tuntia* |
+| 6.12.-21 | Harjoitustyön koodin kasvatus | *5 tuntia* |
+| 7.12.-21 | Harjoitustyön testien tekemistä, testikattavuusraportin ongelmien selvitystä, koodin laadun tarkistusta | *6 tuntia* |
+|          | Testien tekemistä ja näiden ongelmien selvitystä sekä ratkomista | *2 tuntia* |
+|          | Vaatimusmäärittelydokumentin, arkkitehtuuridokumentin ja README.md:n päivitykset | *3 tuntia* |
+|          |                        | *yht. 61 tuntia* |

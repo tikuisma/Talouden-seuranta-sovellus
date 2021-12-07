@@ -10,8 +10,7 @@ Sovelluksen käyttäjänä olisi tarkoitus toimia vain yksi käyttäjärooli eli
 
 
 ## Käyttöliittymäluonnos
-Sovellus koostuu kolmesta-neljästä eri näkymästä, tuleva versio muuttuu hieman alun luonnoksesta, mutta perusperiaate on pysynyt samana. (uusi luonnos työn alla)
-![kayttoliittyma](https://user-images.githubusercontent.com/93583969/141856907-52476686-e02b-4aac-bdc2-5d2b0a59ac5a.jpg)
+Sovellus koostuu kolmesta eri näkymästä, suuntaa antava luonnos ohessa:
 
 Sovelluksen käynnistäessä olisi ensin tarkoitus tulla käyttäjän kirjautumisnäkymä, jonka jälkeen jo rekisteröitynyt käyttäjä laittaa käyttäjätunnuksensa ja kirjautuu sisään tai rekisteröimätön käyttäjä ensin rekisteröityy ja sitten kirjautuu sisään juuri luomallaan tunnuksella. Tässä näkymässä pystyy siis luomaan sekä käyttäjän että jo luotu käyttäjä pystyy sisäänkirjautumaan. Kirjautumisen jälkeen käyttäjälle avautuu näkymä, jossa käyttäjä voi lisätä itselleen menon ja/tai tulon. Kun käyttäjä haluaa tallentaa tulon/menon, ilmestyy näkyviin vielä uusi näkymä, jossa käyttäjältä varmistetaan vielä haluttu tallennus. Tällä yritetään minimoida käyttäjän tekemät vahinkopainallukset sekä se antaa käyttäjälle vielä mahdollisuuden tarkistaa tiedot, joita ollaan tallentamassa. Tuloihin ja menoihin käyttäjä saa ennen tallentamista valita vetolaatikoista itselleen sopivan kategorian ja lisätä kuukauden sekä vuoden ja laittaa summan. Kaikki kohdat tulee täyttää, muutoin sovellus ei anna käyttäjän tallentaa tietoja. Tilastoista nähdään kuukausittainen balanssi eli tulojen ja menojen yhteensovitus sekä kategoriat joihin rahaa on kulunut kuukauden aikana.
 
@@ -30,9 +29,9 @@ Sovelluksen käynnistäessä olisi ensin tarkoitus tulla käyttäjän kirjautumi
 - Käyttäjälle aukeaa näkymä, jossa on listattuna Tulot, Menot, Tilastot ja Kirjaudu ulos -kohdat. Näistä valitsemalla "save income" tai "save expense" käyttäjä pääsee tallentamaan haluamansa tiedot, mutta sitä ennen käyttäjälle aukeaa uusi näkymä, jossa käyttäjän tulee vielä varmentaa antamansa tiedot.
 	- **Tehty:** Tuloille ja menoille on omat kategoriavalikkonsa, josta käyttäjä saa valita itselleen sopivan tyypin. Tämän jälkeen kategoriavalikot yhdistyvät ja näihin tulee asettaa summa, kuukausi ja vuosi. Kaikki kohdat ovat täytettävä ennen tallennusta, muutoin sovellus ei päästä käyttäjää eteenpäin.
 	- **Tehty:** Kategoriat on ennalta annettu käyttäjälle. Käyttäjä ei pysty näihin itse kirjoittamaan, ainoastaan summa-kohtaan käyttäjä pystyy syöttämään numeroita.
-	- **Vielä tekemättä:** Tilastot ovat näkyvissä ns. päänäkymässä yhdessä tulojen ja menojen kanssa, käyttäjä näkee kuukausittaisen kulutuksensa, tässä näkyy saadut tulot ja menot kuukausittain sekä näiden tasapaino ja mihin kategorioihin rahaa on mennyt. 
-	- **Vielä tekemättä:** Valittaessa Kirjaudu ulos, käyttäjä kirjautuu ulos järjestelmästä.
-	- **Tehty:** Käyttäjän tekemät tallennukset tallennetaan vasta, kun käyttäjä on varmistanut valintansa uudessa näkymässä.
+	- **Tehty:** Tilastot menoista aukeavat uuteen ikkunaan, käyttäjä näkee täältä valitsemansa kuukauden ja vuoden kulutuksensa pylväsdiagrammin muodossa. Tässä näkyy menojen kategoriat ja summa paljonko tiettyyn kategoriaan on mennyt rahaa. 
+	- **Vielä tekemättä:** Kirjaudu ulos-nappula, käyttäjä kirjautuu ulos järjestelmästä.
+	- **Tehty:** Käyttäjän tekemät tulo/meno-tallennukset tallennetaan vasta, kun käyttäjä on varmistanut valintansa uudessa näkymässä.
 	- **Vielä tekemättä:** Päänäkymässä tulisi näkyä suunnilleen n. 5 viimeisintä lisäystä tuloihin/menoihin ja kuukauden vaihtuessa, nämä tyhjentyvät. 
 
 ### Jatkokehitysideat

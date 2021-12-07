@@ -28,14 +28,13 @@ Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohje
 - Koodin laadun pystyy tarkastamaan:
 	1. ensin komento: ```poetry shell```
 	2. komento: ```pylint src```
-- Koodin tämänhetkinen pisteytys on 7.17/10 
+- Koodin laadun tämänhetkinen pisteytys on 8.7/10 
 
-### Ohjelman testaus: TESTAUS EI TOIMI!!
+### Ohjelman testaus:
 
 - Testit suoritetaan komennolla: ```poetry run invoke test```
 
 ### Testikattavuus
 
-- Testikattavuusraportin voi generoida **src-hakemiston sisällä** komennolla: ```poetry run invoke coverage-report```
-- Raportin tekeminen ei onnistu ot-harjoitustyo -hakemiston alla
+- Testikattavuusraportin voi generoida komennolla: ```poetry run invoke coverage-report```
 - Raportti generoituu htmlcov-hakemistoon.

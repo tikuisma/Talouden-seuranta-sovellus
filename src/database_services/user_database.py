@@ -1,8 +1,9 @@
 import sqlite3
+from config import USERDATABASE_FILE_PATH
 class UserDatabase:
     def __init__(self):
         '''SQLite3:n tietokannan luonti'''
-        self.database = sqlite3.connect('./users.db')
+        self.database = sqlite3.connect(USERDATABASE_FILE_PATH)
         self.dcursor = self.database.cursor()
         self.dcursor.execute('''CREATE TABLE IF NOT EXISTS
         Users (username TEXT)''')
@@ -19,5 +20,4 @@ class UserDatabase:
         rows = check.fetchall()
         if (username,) in rows:
             return False
-        else:
-            return True
+        return True
