@@ -27,7 +27,7 @@ Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohje
 
 - Koodin laadun pystyy tarkastamaan:
 	1. ensin komento: ```poetry shell```
-	2. komento: ```pylint src```
+	2. komento: ```poetry run invoke lint```
 - Koodin laadun tämänhetkinen pisteytys on 8.7/10 
 
 ### Ohjelman testaus:
