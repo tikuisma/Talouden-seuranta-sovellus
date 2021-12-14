@@ -22,6 +22,7 @@ Sovelluksen päänäkymä on tehty GUI-luokkaan, joka sisältää metodeja, joil
 Statistics-luokka luo uuden näkymän, jonka metodit kutsuvat Database-luokkaa, joka taas palauttaa takaisin tiedot metodien käytettäviksi.
 Database-luokka hallitsee yhteydenpitoa tietokannan kanssa eli se sisältää kaikki tietokantakutsut ja palauttaa käytettävässä muodossa tietoa muille luokille ja metodeille.
 
+![IMG_20211214_202000__01](https://user-images.githubusercontent.com/93583969/146057272-97943cb3-8197-45f4-92b7-7c90901f273f.jpg)
 
 ## Tietojen pysyväistallennus
 
