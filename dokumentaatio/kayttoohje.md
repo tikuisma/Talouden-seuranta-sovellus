@@ -13,9 +13,13 @@ Tämän jälkeen ohjelman voi käynnistää komennolla:
 ## Uuden käyttäjän luominen ja sisäänkirjautuminen
 
 Sovellus käynnistyy kirjautumisnäkymään:
+
 ![sisäänkirjautuminen](https://user-images.githubusercontent.com/93583969/146052369-349ce2a4-0237-4c15-b01e-7373992ee389.png)
+
 Mikäli sinulla on olemassa oleva käyttäjätunnus, syötetään se syötekenttään ja painamalla "Login"-painiketta.
+
 ![uusikäyttäjä](https://user-images.githubusercontent.com/93583969/146052426-0efb385c-955f-4faf-9c4d-947c44bd43d0.png)
+
 Mikäli haluat luoda uuden käyttäjätunnuksen, syötetään haluttu käyttäjätunnus syötekenttään ja painetaan "Create new user"-painiketta. Tämän jälkeen saat ilmoituksen joko onnistuneesta tai epäonnistuneesta käyttäjän luomisesta. Mikäli käyttäjätunnuksen luonti onnistui, voit painaa "Login"-painiketta sisäänkirjautuaksesi ja päänäkymään päästäksesi.
 
 ## Päänäkymä
