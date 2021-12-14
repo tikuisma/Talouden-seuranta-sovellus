@@ -31,7 +31,7 @@ Pakkauksen **database_services** luokat ``UserDatabase`` ja ``Database`` huoleht
 ### Tiedostot
 
 Sovellus tallentaa käyttäjät ja käyttäjien lisäämät tiedot eri tietokantoihin.
-Sovelluksen juureen sijoitettu konfiguraatiotiedosto .env määrittelee tiedostojen nimet ja polut ???????
+Sovelluksen juureen sijoitettu konfiguraatiotiedosto .env määrittelee tiedostojen nimet ja polut.
 Käyttäjät tallennetaan SQLite3-tietokantatauluun ``Users``, joka alustetaan [user_database.py](https://github.com/tikuisma/ot-harjoitustyo/blob/master/src/database_services/user_database.py)-tiedostossa.
 Käyttäjän tallentamat tiedot taas tallennetaan SQLite3-tietokantatauluun ``Database``, joka alustetaan [database.py](https://github.com/tikuisma/ot-harjoitustyo/blob/master/src/database_services/database.py)-tiedostossa.
 
@@ -46,5 +46,5 @@ Kun kirjautumisnäkymän syötekenttään kirjoitetaan käyttäjätunnus, tämä
 Ohjelman käynnistäessä main kutsuu Log_in_GUI-luokkaa, joka luo graafisen käyttöliittymän. Log_in_GUI taas kutsuu Log_in-tiedoston new_user_creation-funktiota, jolle on annettu parametriksi käyttäjänimi. Sovelluslogiikka selvittää onko ``UserDatabase``:n avulla onko käyttäjänimi jo olemassa. Jos ei ole, käyttäjä palauttaa ilmoituksen onnistuneesta käyttäjänimen luonnista. Tämän jälkeen kutsutaan user_login-funktiota, jolla sovelluslogiikka tarkistaa onko käyttäjänimi olemassa, jos tämä löytyy, sisäänkirjautuminen onnistuu. Käyttöliittymä vaihtaa näkymäksi ``GUI``:n eli sovelluksen varsinaisen päänäkymän ja näyttää näkymään sisäänkirjautuneen käyttäjän mahdolliset lisäykset.
 
 ### Käyttäjän tulon tai menon lisääminen
-
+...
 
