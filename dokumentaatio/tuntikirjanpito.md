@@ -20,4 +20,8 @@ ________________
 | 7.12.-21 | Harjoitustyön testien tekemistä, testikattavuusraportin ongelmien selvitystä, koodin laadun tarkistusta | *6 tuntia* |
 |          | Testien tekemistä ja näiden ongelmien selvitystä sekä ratkomista | *2 tuntia* |
 |          | Vaatimusmäärittelydokumentin, arkkitehtuuridokumentin ja README.md:n päivitykset | *3 tuntia* |
-|          |                        | *yht. 61 tuntia* |
+| 11.12.-21 | Harjoitustyön koodin kasvatus | *4 tuntia* |
+| 14.12.-21 | Docstring-dokumentointia | n. *2 tuntia* |
+|  | Arkkitehtuurikuvauksen aloitus | * * |
+|  | Alustavan käyttöohjeen tekemistä | * * |
+|          |                        | *yht.  tuntia* |

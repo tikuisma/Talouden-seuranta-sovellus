@@ -1,12 +1,33 @@
-from tkinter import *
+from tkinter import Tk, Label, Button
 from database_services.database import Database
 
 database = Database()
 class ConfirmingWindow:
+    """Luokka, jonka avulla tehdään uusi ikkunanäkymä käyttäjälle, jossa
+    varmistetaan tallennettava tieto vielä käyttäjältä.
+
+    Attributes:
+        username: Sisäänkirjautunut käyttäjä.
+        income_expense: Tieto siitä onko tallennettava tulo vai meno.
+        category: Tallennettavan tulon/menon valittu kategoria.
+        month: Käyttäjän valitsema kuukausi.
+        year: Käyttäjän valitsema vuosi.
+        amount: Käyttäjän syöttämä summa.
+    """
+
     def __init__(self, username, income_expense, category, month, year, amount):
         self.data = [username, income_expense, category, month, year, amount]
-        '''Luodaan uusi näkymä, jossa varmistetaan käyttäjän tekemät
-        tallennukset ennen tietokantaan siirtoa.'''
+        """Luokan konstruktori, jolla luodaan uusi ikkunanäkymä.
+
+        Args:
+            username: Sisäänkirjautunut käyttäjä.
+            income_expense: Tieto siitä onko tallennettava tulo vai meno.
+            category: Tallennettavan tulon/menon valittu kategoria.
+            month: Käyttäjän valitsema kuukausi.
+            year: Käyttäjän valitsema vuosi.
+            amount: Käyttäjän syöttämä summa.
+        """
+
         self.window = Tk()
         self.window.geometry("500x400+10+10")
         self.lbl = Label(self.window, text='''Confirming your\
@@ -16,7 +37,7 @@ class ConfirmingWindow:
         self.check_lbl = Label(self.window, text=
         '''Are you sure that you want to continue to save your options?
         To confirm your choices, you must press "Save" or
-        if you dont want to save please press "Don't save".''')
+        if you dont want to save, please press "Don't save".''')
         self.check_lbl.place(x=15, y=40)
 
         self.save_button = Button(self.window,
@@ -28,17 +49,20 @@ class ConfirmingWindow:
         self.cancel_button.place(x=200, y=100)
 
         self.window.mainloop()
-    
+
     def check_save(self):
-        '''Tätä metodia painettaessa, kutsutaan toista funktiota,
-        johon annetaan tiedot, jotka viedään tietokantaan. Tämän jälkeen
-        ikkuna sulkeutuu.'''
+        """Käyttäjän valitessa tietojen tallennus, kutsutaan toista funktiota,
+        jolle annetaan tarvittavat tiedot, jotka siirretään tietokantaan.
+        Tämän jälkeen ikkuna sulkeutuu ja palataan takaisin ns. pääikkunaan.
+        """
+
         database.writing_database(self.data[0],self.data[1],
         self.data[2],self.data[3],self.data[4],self.data[5])
         self.window.destroy()
 
     def dont_save(self):
-        '''Painettaessa ei-tallentavaa -painiketta, näkymä poistuu.'''
+        """Mikäli käyttäjä ei haluakaan tallentaa tietoja. Ikkuna sulkeutuu ja
+        palataan takaisin ns. pääikkunanäkymään.
+        """
+
         self.window.destroy()
-
-
