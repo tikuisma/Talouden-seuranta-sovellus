@@ -12,3 +12,4 @@
 /ot-harjoitustyo/src/pyproject.toml
 /ot-harjoitustyo/.coverage/
 /ot-harjoitustyo/src/.gitignore
+/ot-harjoitustyo/src/__pycache__/config.cpython-38.pyc
