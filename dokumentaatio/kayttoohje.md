@@ -32,7 +32,7 @@ Tässä voi lisätä vetovalikoista tulon tai menon, syöttää sille summan, va
 
 ![saveincome](https://user-images.githubusercontent.com/93583969/146052676-6b045501-4e96-4097-b356-2370317c8d32.png)
 
-Mikäli haluat etsiä valitsemallasi kuukaudella ja vuodella lisätyt tulot ja menot, näät ne "Go to statistics" -painiketta painamalla, jolloin avautuu uusi näkymä.
+Mikäli haluat etsiä valitsemallasi kuukaudella ja vuodella lisätyt tulot ja menot, näet ne "Go to statistics" -painiketta painamalla, jolloin avautuu uusi näkymä.
 
 ### Tallentamisen varmistus -näkymä
 
