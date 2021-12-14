@@ -43,3 +43,4 @@ Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohje
 ### Release
 
 [Viikko 5 release](https://github.com/tikuisma/ot-harjoitustyo/releases/tag/viikko5)
+[Viikko 6 release](https://github.com/tikuisma/ot-harjoitustyo/releases/tag/viikko6)
