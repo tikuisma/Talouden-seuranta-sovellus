@@ -28,13 +28,10 @@ Onnistuneen sisäänkirjautumisen jälkeen avautuu päänäkymä:
 
 ![päänäkymä](https://user-images.githubusercontent.com/93583969/146052568-34252185-390e-43d9-b128-21e21d2d85f0.png)
 
-![saveincome](https://user-images.githubusercontent.com/93583969/146052676-6b045501-4e96-4097-b356-2370317c8d32.png)
-
 Tässä voi lisätä vetovalikoista tulon tai menon, syöttää sille summan, valita vuoden ja kuukauden sekä tämän jälkeen painaa joko "save income"- tai "save expense"-painiketta riippuen kumpaa ollaan tallentamassa, tästä avautuu uusi tallentamisen varmistus -näkymä.
 
-![päivitetty varmistuksen jälkeen](https://user-images.githubusercontent.com/93583969/146052725-6c555d12-2ba9-44c8-bd71-743a05d93906.png)
+![saveincome](https://user-images.githubusercontent.com/93583969/146052676-6b045501-4e96-4097-b356-2370317c8d32.png)
 
-Onnistuneen tulon/menon tallennuksen jälkeen voi painaa "Refresh latest", jolloin päänäkymään ilmestyy taulukko, josta näkee viimeisimmät viisi tuoreinta lisäystä.
 Mikäli haluat etsiä valitsemallasi kuukaudella ja vuodella lisätyt tulot ja menot, näät ne "Go to statistics" -painiketta painamalla, jolloin avautuu uusi näkymä.
 
 ### Tallentamisen varmistus -näkymä
@@ -44,6 +41,10 @@ Kun päänäkymässä on täydetty vaadittavat tiedot ja painettu jompaa kumpaa 
 ![varmistusikkuna](https://user-images.githubusercontent.com/93583969/146052771-dcf812c0-3330-4c4f-be8b-704734ca3179.png)
 
 Tässä varmistetaan, että halutaan aiemmassa ikkunassa olleet tiedot tallentaa. Mikäli tiedot halutaan tallentaa, painetaan "Save" tai, jos halutaan palata takaisin tallentamatta, painetaan "Dont save"-painiketta.
+
+Onnistuneen tulon/menon tallentamisen jälkeen palaudutaan takaisin päänäkymään, jossa voi painaa "Refresh latest", jolloin päänäkymään ilmestyy taulukko, josta näkee viimeisimmät viisi tuoreinta lisäystä.
+
+![päivitetty varmistuksen jälkeen](https://user-images.githubusercontent.com/93583969/146052725-6c555d12-2ba9-44c8-bd71-743a05d93906.png)
 
 ### Tilastonäkymä
 
