@@ -23,9 +23,13 @@ class GUI:
         self.user = user
         self.window = Tk()
         self.window.title(f"Account: {self.user}")
-        self.window.geometry("550x800+10+10")
+        self.window.geometry("500x630+10+10")
         self.lbl = Label(self.window, text="Personal economics")
         self.lbl.place(x = 175, y = 10)
+
+        self.sign_out_button = Button(self.window, text="Sign out",
+        command=self.sign_out)
+        self.sign_out_button.place(x=380, y=10)
 
         self.income_lbl = Label(self.window, text="Incomes:")
         self.income_lbl.place(x=50, y=55)
@@ -68,7 +72,7 @@ class GUI:
         self.pop_up_field.place(x=75, y=5)
 
         self.statistics_lbl=Label(self.window, text='''Search your expense-statistics here:''')
-        self.statistics_lbl.place(x = 130, y = 290)
+        self.statistics_lbl.place(x = 100, y = 295)
 
         self.month_statistics_lbl = Label(self.window, text="Month:")
         self.month_statistics_lbl.place(x=50, y=320)
@@ -85,7 +89,7 @@ class GUI:
 
         self.statistic_btn = Button(self.window, text="Go to statistics",
         command=self.statistics_button)
-        self.statistic_btn.place(x=150, y=365)
+        self.statistic_btn.place(x=150, y=375)
 
         self.top5_btn = Button(self.window, text="Refresh latest",
         command=self.income_expense_table)
@@ -170,3 +174,8 @@ class GUI:
 
         table = Table(self.window, self.user, Database())
         table.creating_table()
+
+    def sign_out(self):
+        """
+        """
+        self.window.destroy()

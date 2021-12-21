@@ -1,4 +1,5 @@
 from tkinter import Label
+from tkinter.constants import LEFT
 
 class Table:
     """Luokka, jonka avulla tehdään taulukko päänäkymään, jossa näkyy
@@ -36,11 +37,11 @@ class Table:
         data = self.database.reading_database_for_table(self.user)
         while len(data) < 5:
             data.append(("", "", "", "", ""))
-        x_coord = [10, 100, 190, 280, 370]
+        x_coord = [40, 120, 270, 320, 390]
         y_coord = 430
         for i in range(5):
             for j in range(len(data[0])):
-                self.table = Label(self.window, text=data[i][j], width=10,
-                fg='black', font=('Arial',10,'bold'))
+                self.table = Label(self.window, text=data[i][j], width=20,
+                fg='black', font=('Arial',10,'bold'), anchor="w")
                 self.table.place(x=x_coord[j], y=y_coord)
             y_coord += 20
