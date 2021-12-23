@@ -47,4 +47,4 @@ Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohje
 
 [Viikko 6 release](https://github.com/tikuisma/ot-harjoitustyo/releases/tag/viikko6)
 
-[Loppupalautuksen release]()
+[Loppupalautuksen release](https://github.com/tikuisma/ot-harjoitustyo/releases/tag/Loppupalautus)
