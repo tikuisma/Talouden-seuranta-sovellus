@@ -9,6 +9,7 @@ Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohje
 - [Vaatimusmäärittely](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 - [Arkkitehtuurikuvaus](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 - [Käyttöohje](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+- [Testausdokumentti](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
 
 ## Asennus
 
