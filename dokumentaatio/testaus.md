@@ -1,12 +1,12 @@
 # Testausdokumentti
-Ohjelmaa on testattu automatisoiduilla unittest -testiohjelmalla. 
+Ohjelmaa on testattu automatisoiduilla unittest -testiohjelmalla. Käyttöliittymän testaus on suoritettu manuaalisesti.
 
 ## Yksikkö- ja integraatiotestaus
 ### Sovelluslogiikka
-Käyttöliittymästä on kutsuja funktioille, luokille ja näiden metodeille. Luokkiin on alustettu omat tietokannat tallennukselle. Tätä varten testissä on käytössä ``TestUserDatabase`` ja ``TestDatabase``.
+Käyttöliittymästä on kutsuja funktioille, luokille ja näiden metodeille. Luokilla hallitaan SQLite-tietokantaan tallennusta. Sisäänkirjautumisesta vastaa *Log_in*-moduuli. Tietokantahakuja suorittaa *database*-moduuli. Tätä varten testeissä on käytössä ``TestUserDatabase``, joka testaa käyttäjän luomista ja sisäänkirjautumista sekä ``TestDatabase``, joka testaa käyttäjän tekemiä tallennuksia tietokantaan.
 
 ### Repositorio-luokat
-Repositorio-luokkia ``UserDatabase`` ja ``Database`` testataan ainoastaan testien käyttöön tehdyillä tiedostoilla. Tiedostojen nimet on konfiguroitu .env.test-tiedostoon. Molempia luokkia testataan ``TestUserDatabase``- ja ``TestDatabase`` -luokilla.
+Repositorio-luokkia ``UserDatabase`` ja ``Database`` testataan ainoastaan testien käyttöön tehdyillä tietokannoilla. Tietokantojen nimet on konfiguroitu .env.test-tiedostoon. Molempia luokkia testataan ``TestUserDatabase`` ja ``TestDatabase`` nimisillä luokilla.
 
 ### Testauskattavuus
 Käyttöliittymää lukuunottamatta sovelluksen testauksen haarautumakattavuus on vaihtelevaa.
@@ -21,11 +21,12 @@ Sovellus on haettu ja sitä on testattu käyttöohjeen kuvaamalla tavalla vain L
 Sovellusta on testattu ns. alkutilanteesta lähtien, jossa käyttäjiä ja näiden lisäilemiä tuloja/menoja ei vielä ole, jolloin ohjelma on luonut näille tietokannan että tilanteissa, joissa käyttäjät ja tallennetut tiedot ovat olleet jo olemassa.
 
 ### Toiminnallisuudet
-Toiminnallisuuksia on pystytty testaamaan ainoastaan käyttäjän luonnin/sisäänkirjautumisen osalta. Muut osat ovat ohjelman koodissa ns. lukittu käyttäjältä tai nämä ilmoittavat käyttäjälle virheilmoituksen graafisessa käyttöliittymässä.
+Toiminnallisuuksia on testattu käyttäjän luonnin/sisäänkirjautumisen osalta unittestilla. Muut ohjelman osat, kuten graafien ja taulukoiden generoituminen oikein on testattu käsin. Suurin osa ohjelmalle annettavista syötteistä on lukittu käyttöliittymään, joten käyttäjän vapaasti muokattavia kenttiä on hyvin rajallisesti ja nämä ilmoittavat tarvittaessa käyttäjälle virheilmoituksen graafisessa käyttöliittymässä.
 
 ## Sovellukseen jääneet laatuongelmat
-Sovellus ei anna tällä hetkellä järkeviä virheilmoituksia.
-Laatuongelmia ovat mm.:
-- SQLiten tietokantaa ei ole alustettu eli sitä ei pysty millään komennolla suorittamaan.
 
-Testien tekeminen oli ylipäätään hieman hankalaa. Ohjelman koodi olisi pitänyt alusta alkaen rakentaa aivan toisella tavalla, jotta olisin päässyt enemmän testailemaan. Tällä hetkellä testaaminen on hankalaa ja suppeaa, koska kaikki pyörii Tkinterin eli graafisen käyttöliittymän ympärillä. Testejä olen pyrkinyt tekemään niin kattavasti kuin ohjelman koodini sen sallii. Kurssin viimeisillä viikoilla en uskaltanut enää lähteä muuttamaan koko projektin koodia toisenlaiseksikaan, mutta tekisin eri tavalla, jos aloittaisin nyt alusta.
+Testien tekeminen oli ylipäätään hieman hankalaa. Ohjelman koodi olisi pitänyt alusta alkaen rakentaa aivan toisella tavalla, jotta olisin päässyt enemmän testailemaan. Tällä hetkellä testaaminen on hankalaa ja suppeaa, koska kaikki pyörii Tkinterin eli graafisen käyttöliittymän ympärillä. Testejä olen pyrkinyt tekemään niin kattavasti kuin ohjelman koodini sen sallii. Kurssin viimeisillä viikoilla en uskaltanut enää lähteä muuttamaan koko projektin koodia toisenlaiseksi, mutta rakentaisin koodin eri tavalla, jos aloittaisin nyt alusta.
+
+Parannettavaa esimerkiksi:
+- Käyttöliittymän ja sovelluksen backendin erottaminen selkeämmin
+- Testien kattavuuden parantaminen, käyttöliittymän puolen testausta voisi automatisoida
