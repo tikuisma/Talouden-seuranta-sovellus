@@ -6,11 +6,11 @@
 /ot-harjoitustyo/laskarit/viikko2/unicafe/src/__pycache__/
 /ot-harjoitustyo/laskarit/viikko2/unicafe/src/htmlcov/
 /ot-harjoitustyo/laskarit/viikko2/unicafe/src/tests/__pycache__/
-/ot-harjoitustyo/src/__pycache__/
-/ot-harjoitustyo/src/.coverage/
+/ot-harjoitustyo/src/__pycache__
+/ot-harjoitustyo/src/.coverage
 /ot-harjoitustyo/src/poetry.lock
 /ot-harjoitustyo/src/pyproject.toml
-/ot-harjoitustyo/.coverage/
+/ot-harjoitustyo/.coverage
 /ot-harjoitustyo/src/.gitignore
 /ot-harjoitustyo/src/__pycache__/config.cpython-38.pyc
 /ot-harjoitustyo/.coverage
