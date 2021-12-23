@@ -20,12 +20,12 @@ Kun sovelluksen "päänäkymässä" päivitetään viisi viimeiseksi lisättyä 
 
 Sovelluksen loogisen tietomallin muodostavat ?????????
 
-Toiminnallisista kokonaisuuksista vastaa GUI-, LoginGUI-, ConfirmingWindow-, Table-, Statistics-luokkien oliot.
+Toiminnallisista kokonaisuuksista vastaa ``GUI``-, ``LoginGUI``-, ``ConfirmingWindow``-, ``Table``-, ``Statistics``-luokkien oliot.
 
 Sovelluslogiikka muodostaa funktiot, joilla tarkistetaan käyttäjän luominen ja tämän lisääminen tai käyttäjän olemassaolo sisäänkirjautumista varten. 
-Sovelluksen päänäkymä on tehty GUI-luokkaan, joka sisältää metodeja, joilla kutsutaan Database-luokkaa tai avataan uusia näkymiä.
-Statistics-luokka luo uuden näkymän, jonka metodit kutsuvat Database-luokkaa, joka taas palauttaa takaisin tiedot metodien käytettäviksi.
-Database-luokka hallitsee yhteydenpitoa tietokannan kanssa eli se sisältää kaikki tietokantakutsut ja palauttaa käytettävässä muodossa tietoa muille luokille ja metodeille.
+Sovelluksen päänäkymä on tehty ``GUI``-luokkaan, joka sisältää metodeja, joilla kutsutaan ``Database``-luokkaa tai avataan uusia näkymiä.
+``Statistics``-luokka luo uuden näkymän, jonka metodit kutsuvat ``Database``-luokkaa, joka taas palauttaa takaisin tiedot metodien käytettäviksi.
+``Database``-luokka hallitsee yhteydenpitoa tietokannan kanssa eli se sisältää kaikki tietokantakutsut ja palauttaa käytettävässä muodossa tietoa muille luokille ja metodeille.
 
 Tässä services-kansion ja sen liitoksissa olevan ohjelman muiden osien suhdetta kuvaava luokka/pakkauskaavio:
 
@@ -47,9 +47,9 @@ Kuvataan seuraavaksi sovelluksen toimintalogiikka yhden päätoiminnallisuuden o
 
 ### Käyttäjän luominen ja sisäänkirjaantuminen
 
-Kun kirjautumisnäkymän syötekenttään kirjoitetaan käyttäjätunnus, tämän jälkeen klikataan Log-in -painiketta, etenee sovelluksen kontrolli seuraavasti:
+Kun kirjautumisnäkymän syötekenttään kirjoitetaan käyttäjätunnus, tämän jälkeen klikataan *Log in* -painiketta, etenee sovelluksen kontrolli seuraavasti:
 ![Sekvenssikaavio](https://user-images.githubusercontent.com/93583969/145101548-ba1e8c03-7423-4ab2-925e-fe460cb79202.jpg)
-Ohjelman käynnistäessä main kutsuu Log_in_GUI-luokkaa, joka luo graafisen käyttöliittymän. Log_in_GUI taas kutsuu Log_in-tiedoston new_user_creation-funktiota, jolle on annettu parametriksi käyttäjänimi. Sovelluslogiikka selvittää onko ``UserDatabase``:n avulla onko käyttäjänimi jo olemassa. Jos ei ole, käyttäjä palauttaa ilmoituksen onnistuneesta käyttäjänimen luonnista. Tämän jälkeen kutsutaan user_login-funktiota, jolla sovelluslogiikka tarkistaa onko käyttäjänimi olemassa, jos tämä löytyy, sisäänkirjautuminen onnistuu. Käyttöliittymä vaihtaa näkymäksi ``GUI``:n eli sovelluksen varsinaisen päänäkymän ja näyttää näkymään sisäänkirjautuneen käyttäjän mahdolliset lisäykset.
+Ohjelman käynnistäessä main kutsuu ``LoginGUI``-luokkaa, joka luo graafisen käyttöliittymän. ``LoginGUI`` taas kutsuu *Log_in*-tiedoston *new_user_creation*-funktiota, jolle on annettu parametriksi käyttäjänimi. Sovelluslogiikka selvittää onko ``UserDatabase``:n avulla onko käyttäjänimi jo olemassa. Jos ei ole, käyttäjä palauttaa ilmoituksen onnistuneesta käyttäjänimen luonnista. Tämän jälkeen kutsutaan *user_login*-funktiota, jolla sovelluslogiikka tarkistaa onko käyttäjänimi olemassa, jos tämä löytyy, sisäänkirjautuminen onnistuu. Käyttöliittymä vaihtaa näkymäksi ``GUI``:n eli sovelluksen varsinaisen päänäkymän ja näyttää näkymään sisäänkirjautuneen käyttäjän mahdolliset lisäykset.
 
 ### Käyttäjän tulon tai menon lisääminen sekä tilaston lukeminen että taulukon luominen päänäkymään
 ![IMG_20211223_182534__01](https://user-images.githubusercontent.com/93583969/147267923-8994279a-bf2a-4cbb-9dd8-afd93738909b.jpg)
