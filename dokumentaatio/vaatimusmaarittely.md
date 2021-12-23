@@ -39,5 +39,5 @@ Sovelluksen käynnistäessä olisi ensin tarkoitus tulla käyttäjän kirjautumi
 	- Tilastoja voisi tarkastella vuositasolla.
 	- Päivämäärät esim. lisätessä menoja.
 	- Päänäkymästä pystyisi siirtymään osioon, jossa näkyisi kaikki asetetut tulot ja menot aikajärjestyksessä.
-	- Käyttäjä saisi itse lisätä kategoriavalikkoon muutaman vaihtoehdon.
+	- Käyttäjä saisi itse lisätä kategoriavalikkoon muutaman vaihtoehdon sekä poistaa lisäämiään tuloja/menoja.
 	- Käyttäjä tarvitsisi sisäänkirjautuessa myös salasanan.
