@@ -13,3 +13,4 @@
 /ot-harjoitustyo/.coverage/
 /ot-harjoitustyo/src/.gitignore
 /ot-harjoitustyo/src/__pycache__/config.cpython-38.pyc
+/ot-harjoitustyo/.coverage
