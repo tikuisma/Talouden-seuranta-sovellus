@@ -3,24 +3,23 @@
 ## Rakenne
 
 Ohjelman rakenne noudattaa tällä hetkellä kaksitasoista kerrosarkkitehtuuria ja pakkausrakenne on seuraava:
-![Arkkitehtuuri](https://user-images.githubusercontent.com/93583969/144111773-7ddebc2b-4b6f-4352-8d4e-dd7e0f152779.jpg)
+![IMG_20211223_193427__01](https://user-images.githubusercontent.com/93583969/147274701-3b53060f-5d54-45c0-83b9-43992041c266.jpg)
 Pakkaus ui sisältää käyttöliittymästä, services sovelluksen backendia sisäänkirjautumiselle ja database_services tietojen pysyväistallennuksesta vastaavan koodin eli tietokantakutsuja. Data sisältää ohjelman tietokannat.
 
 ## Käyttöliittymä
 
 Käyttöliittymä sisältää neljä erillistä näkymää:
-- Sisäänkirjautuminen/uuden käyttäjän luominen
+- Sisäänkirjautuminen/uuden käyttäjän luominen.
 - Päänäkymä, jossa pystyy lisäämään tuloja ja menoja. Siirtymään tilastojen katseluun.
 - Varmistusnäkymä tulon/menon tallennukselle.
 - Tilastonäkymä
 Jokainen näkymä on toteutettu omana luokkana. Näkymistä yksi on aina kerrallaan käyttäjälle näkyvissä. UI-hakemisto vastaa näkymien näyttämisestä. 
 
 Kun sovelluksen "päänäkymässä" päivitetään viisi viimeiseksi lisättyä tuloa/menoa, kutsutaan sovelluksen GUI-luokan metodia *income_expense_table*, joka taas edelleen kutsuu Table-luokkan metodia *creating_table*, joka sekä luo taulukon että päivittää sen uudelleen tietokannasta haettujen tietojen perusteella.
+
 ## Sovelluslogiikka
 
-Sovelluksen loogisen tietomallin muodostavat ?????????
-
-Toiminnallisista kokonaisuuksista vastaa ``GUI``-, ``LoginGUI``-, ``ConfirmingWindow``-, ``Table``-, ``Statistics``-luokkien oliot.
+Sovelluksen loogisen tietomallin muodostavat ``UserDatabase``. ``Database`` ja ``log_in``-moduuli. Käyttöliittymää ohjaavat myös seuraavat luokat:``GUI``, ``LoginGUI``, ``ConfirmingWindow``, ``Table``, ``Statistics``.
 
 Sovelluslogiikka muodostaa funktiot, joilla tarkistetaan käyttäjän luominen ja tämän lisääminen tai käyttäjän olemassaolo sisäänkirjautumista varten. 
 Sovelluksen päänäkymä on tehty ``GUI``-luokkaan, joka sisältää metodeja, joilla kutsutaan ``Database``-luokkaa tai avataan uusia näkymiä.
@@ -32,7 +31,7 @@ Tässä services-kansion ja sen liitoksissa olevan ohjelman muiden osien suhdett
 ![IMG_20211214_202000__01](https://user-images.githubusercontent.com/93583969/146057272-97943cb3-8197-45f4-92b7-7c90901f273f.jpg)
 
 ## Tietojen pysyväistallennus
-Tietojen pysyväistallennuksessa on käytetty ainoastaan SQL:n tietokantoja. Pakkauksen **database_services** luokat ``UserDatabase`` ja ``Database`` huolehtivat tietojen tallentamisesta. Molemmat luokat tallentavat tietonsa SQLite3-tietokantaan.
+Tietojen pysyväistallennuksessa on käytetty ainoastaan SQL:n tietokantoja. Pakkauksen *database_services* luokat ``UserDatabase`` ja ``Database`` huolehtivat tietojen tallentamisesta. Molemmat luokat tallentavat tietonsa SQLite3-tietokantaan.
 
 ### Tiedostot
 
@@ -54,9 +53,9 @@ Ohjelman käynnistäessä main kutsuu ``LoginGUI``-luokkaa, joka luo graafisen k
 ### Käyttäjän tulon tai menon lisääminen sekä tilaston lukeminen että taulukon luominen päänäkymään
 ![IMG_20211223_182534__01](https://user-images.githubusercontent.com/93583969/147267923-8994279a-bf2a-4cbb-9dd8-afd93738909b.jpg)
 
-Käyttäjän halutessa tallentaa tulo ja graafisessa käyttöliittymässä täytetyt kohdat ovat valmiit. Käyttäjä on jo valinnut *save income* -nappulaa, jonka jälkeen kutsutaan ``ConfirmingWindow``-luokkaa, jolle annetaan tiedot ja luokka luo uuden näkymän. Käyttäjän valitessa graafisessa käyttöliittymässä tallennuksen eli *check_save* -metodin. Kutsutaan ``Database``-luokan metodia *writing_database*, jolle annetaan tiedot. Tietokantaan tallennuksen jälkeen, ikkuna sulkeutuu ja palaudutaan takaisin ``GUI``-luokan luomaan ikkunanäkymään. Käyttäjän valitessa graafisessa käyttöliittymässä Tilastojen etsintä -kohdan valitsemillaan tiedoilla kutsutaan ``Statistics``-luokkaa. Statistics-olio taas kutsuu ``Database``-luokan metodia *reading_database*, joka taas palauttaa löytämänsä tiedot takaisin ``Statistics``-luokalle, joka taas palauttaa ``GUI``-luokalle tiedon tietojen löytymisestä. Käyttäjän halutessa päivittää päänäkymän taulukon, ensin käyttäjä kutsuu graafisessa käyttöliittymässä luokan omaa metodia, *income_expense_table*, joka taas kutsuu ``Table``-luokan *creating_table*-metodia. ``Table``-luokan metodi taas kutsuu ``Database``-luokan metodia *reading_database_for_table*, joka palauttaa löytyneet tiedot takaisin ``Table``-luokan metodille käsiteltäväksi. ``Table``-luokka taas "palauttaa" valmistuttuaan ``GUI``-luokalle päivitetyn taulukon graafiseen käyttöliittymään. 
+Kun käyttäjä haluaa tallentaa kuluja tai menoja valitsee hän vetovalikoista kategoriat ja syöttää summan. Kun käyttäjä painaa *save income* - tai *save expense* -nappulaa kutsutaan ``ConfirmingWindow``-luokkaa, jolle annetaan tiedot ja luokka luo uuden näkymän. Käyttäjän valitessa graafisessa käyttöliittymässä tallennuksen eli *check_save* -metodin. Kutsutaan ``Database``-luokan metodia *writing_database*, jolle annetaan tallennettavat tiedot. Tietokantaan tallennuksen jälkeen, ikkuna sulkeutuu ja palaudutaan takaisin ``GUI``-luokan luomaan ikkunanäkymään. Käyttäjän valitessa graafisessa käyttöliittymässä tilastojen etsintä -kohdan valitsemillaan tiedoilla kutsutaan ``Statistics``-luokkaa. Statistics-olio taas kutsuu ``Database``-luokan metodia *reading_database*, joka taas palauttaa löytämänsä tiedot takaisin ``Statistics``-luokalle, joka taas palauttaa ``GUI``-luokalle tiedon tietojen löytymisestä. Käyttäjän halutessa päivittää päänäkymän taulukon, ensin käyttäjä kutsuu graafisessa käyttöliittymässä luokan omaa metodia, *income_expense_table*, joka taas kutsuu ``Table``-luokan *creating_table*-metodia. ``Table``-luokan metodi taas kutsuu ``Database``-luokan metodia *reading_database_for_table*, joka palauttaa löytyneet tiedot takaisin ``Table``-luokan metodille käsiteltäväksi. ``Table``-luokka taas "palauttaa" valmistuttuaan ``GUI``-luokalle päivitetyn taulukon graafiseen käyttöliittymään. 
 
 ## Ohjelman rakenteeseen jääneet heikkoudet
 
 ### Käyttöliittymä
-Graafisen käyttöliittymän koodissa olevat heikkoudet ???????
+Graafisen käyttöliittymän koodissa on hieman toisteisuutta, jota voisi poistaa luomalla metodeja esimerkiksi tekstien luomiselle. Koodia olisi myös mahdollisesti voinut jakaa hieman pienempiin osiin.
