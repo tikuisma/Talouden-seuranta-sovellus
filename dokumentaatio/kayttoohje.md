@@ -32,7 +32,7 @@ Mikäli haluat luoda uuden käyttäjätunnuksen, syötetään haluttu käyttäj�
 
 Onnistuneen sisäänkirjautumisen jälkeen avautuu päänäkymä:
 
-![päänäkymä](https://user-images.githubusercontent.com/93583969/146052568-34252185-390e-43d9-b128-21e21d2d85f0.png)
+![Screenshot from 2021-12-23 18-22-22](https://user-images.githubusercontent.com/93583969/147267249-98a4b5cd-ba58-45cd-8915-99c902e64d4a.png)
 
 Tässä voi lisätä vetovalikoista tulon tai menon, syöttää sille summan, valita vuoden ja kuukauden sekä tämän jälkeen painaa joko "save income"- tai "save expense"-painiketta riippuen kumpaa ollaan tallentamassa, tästä avautuu uusi tallentamisen varmistus -näkymä.
 
@@ -44,7 +44,7 @@ Mikäli haluat etsiä valitsemallasi kuukaudella ja vuodella lisätyt tulot ja m
 
 Kun päänäkymässä on täydetty vaadittavat tiedot ja painettu jompaa kumpaa tallennus-painiketta, avautuu uusi näkymä.
 
-![varmistusikkuna](https://user-images.githubusercontent.com/93583969/146052771-dcf812c0-3330-4c4f-be8b-704734ca3179.png)
+![Screenshot from 2021-12-23 18-22-48](https://user-images.githubusercontent.com/93583969/147267207-675974dc-67a4-4353-973c-960d442e471c.png)
 
 Tässä varmistetaan, että halutaan aiemmassa ikkunassa olleet tiedot tallentaa. Mikäli tiedot halutaan tallentaa, painetaan "Save" tai, jos halutaan palata takaisin tallentamatta, painetaan "Dont save"-painiketta.
 
