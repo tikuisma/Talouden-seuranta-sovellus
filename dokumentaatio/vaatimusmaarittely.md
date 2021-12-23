@@ -10,9 +10,9 @@ Sovelluksen käyttäjänä olisi tarkoitus toimia vain yksi käyttäjärooli eli
 
 
 ## Käyttöliittymäluonnos
-Sovellus koostuu kolmesta eri näkymästä, suuntaa antava luonnos ohessa:
+Sovellus koostuu neljästä eri näkymästä, suuntaa antava luonnos ohessa:
 ![IMG_20211222_190531__01](https://user-images.githubusercontent.com/93583969/147267589-fe2befd2-42dd-46f8-8a0f-a6e537fb1dca.jpg)
-
+(Luonnoksesta puuttuu tallennuksen varmistus -näkymä)
 Sovelluksen käynnistäessä olisi ensin tarkoitus tulla käyttäjän kirjautumisnäkymä, jonka jälkeen jo rekisteröitynyt käyttäjä laittaa käyttäjätunnuksensa ja kirjautuu sisään tai rekisteröimätön käyttäjä ensin rekisteröityy ja sitten kirjautuu sisään juuri luomallaan tunnuksella. Tässä näkymässä pystyy siis luomaan sekä käyttäjän että jo luotu käyttäjä pystyy sisäänkirjautumaan. Kirjautumisen jälkeen käyttäjälle avautuu näkymä, jossa käyttäjä voi lisätä itselleen menon ja/tai tulon. Kun käyttäjä haluaa tallentaa tulon/menon, ilmestyy näkyviin vielä uusi näkymä, jossa käyttäjältä varmistetaan haluttu tallennus. Tällä yritetään minimoida käyttäjän tekemät vahinkopainallukset sekä antaa käyttäjälle vielä mahdollisuus tarkistaa tiedot, joita ollaan tallentamassa. Tuloihin ja menoihin käyttäjä saa ennen tallentamista valita vetolaatikoista itselleen sopivan kategorian, lisätä kuukauden sekä vuoden ja laittaa summan. Kaikki kohdat tulee täyttää, muutoin sovellus ei anna käyttäjän tallentaa tietoja. Ns. päänäkymässä on vielä alle listattu 5 tuoreinta lisäystä. Mikäli käyttäjä lisäilee menoja/tuloja, voi käyttäjä painaa refresh-nappia, jolloin viisi viimeisintä lisättyä tulevat näkyviin sekä lisäysten jälkeen listauksen saa päivitettyä. Tilastoihin mentäessä käyttäjä valitsee ensin kuukauden ja vuoden, jolta haluaa nähdä kuukausittaisen menonsa ja tulonsa. Tästä aukeaa uusi näkymä ja tulot/menot ovat annettu pylväsdiagrammin muodossa sekä kategoriat joihin rahaa on kulunut kuukauden aikana. Jos haetulta ajalta ei löydy lisättyjä tietoja, käyttäjälle annetaan ilmoitus uudessa näkymässä.
 
 ## Sovelluksen toiminnallisuus
