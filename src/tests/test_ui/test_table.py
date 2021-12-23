@@ -1,13 +1,12 @@
 import unittest
 from tkinter import Tk
 from ui.table import Table
-from tests.test_ui.test_tkinter import TestTkinter
 from database_services.database import Database
 
 class TestTable(unittest.TestCase):
     def setUp(self):
-        self.window = TestTkinter()
         self.database = Database()
+        self.window = Tk()
         self.database.dcursor.execute('''DELETE FROM Database''')
         self.database.writing_database("marsu", "expense", "Pets", 7, 2021, 12)
         self.database.writing_database("marsu", "expense", "Pets", 7, 2021, 1)
