@@ -5,11 +5,11 @@ Tarkoituksena tehdä sovellus, jossa käyttäjä pystyy sekä lisäilemään men
 Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohjelmistotekniikka-kurssia.
 
 ## Dokumentaatio
-- [Tuntikirjanpito](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+- [Käyttöohje](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 - [Vaatimusmäärittely](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 - [Arkkitehtuurikuvaus](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
-- [Käyttöohje](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 - [Testausdokumentti](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
+- [Tuntikirjanpito](https://github.com/tikuisma/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 ## Asennus
 
