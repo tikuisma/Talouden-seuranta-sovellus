@@ -29,16 +29,16 @@ class ConfirmingWindow:
         """
 
         self.window = Tk()
-        self.window.geometry("500x400+10+10")
-        self.lbl = Label(self.window, text='''Confirming your\
-        information recording''')
-        self.lbl.place(x=15, y=10)
+        self.window.title("Confirm?")
+        self.window.geometry("450x200+10+10")
+        self.lbl = Label(self.window, text="Confirming your information recording?")
+        self.lbl.place(x=75, y=10)
 
         self.check_lbl = Label(self.window, text=
         '''Are you sure that you want to continue to save your options?
         To confirm your choices, you must press "Save" or
         if you dont want to save, please press "Don't save".''')
-        self.check_lbl.place(x=15, y=40)
+        self.check_lbl.place(x=18, y=40)
 
         self.save_button = Button(self.window,
         text="Save", command=self.check_save)
