@@ -9,7 +9,9 @@ Käyttöliittymästä on kutsuja funktioille, luokille ja näiden metodeille. Lu
 Repositorio-luokkia ``UserDatabase`` ja ``Database`` testataan ainoastaan testien käyttöön tehdyillä tiedostoilla. Tiedostojen nimet on konfiguroitu .env.test-tiedostoon. Molempia luokkia testataan ``TestUserDatabase``- ja ``TestDatabase`` -luokilla.
 
 ### Testauskattavuus
-Käyttöliittymää lukuunottamatta sovelluksen testauksen haarautumakattavuus on vaihtelevaa, 28-100%.
+Käyttöliittymää lukuunottamatta sovelluksen testauksen haarautumakattavuus on vaihtelevaa.
+
+![Screenshot from 2021-12-23 18-44-18](https://user-images.githubusercontent.com/93583969/147269559-c10fdd18-558c-4d52-9cf3-1fbcdd9ea0d2.png)
 
 ## Järjestelmätestaus
 Sovelluksen järjestelmätestaus on toteutettu manuaalisesti.
