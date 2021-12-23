@@ -62,4 +62,4 @@ Mikäli näitä ei olisi, ikkuna avautuu ja ilmoittaa käyttäjälle viestillä,
 
 ### Uloskirjautuminen
 
-Päänäkymän oikeassa ylänurkassa on sign out -nappula. Tätä painamalla käyttäjä uloskirjautuu ja palaudutaan takaisin sisäänkirjautumisnäkymään.
+Päänäkymän oikeassa ylänurkassa on sign out -nappula. Tätä painamalla käyttäjä uloskirjautuu ja palaudutaan takaisin sisäänkirjautumisnäkymään. Mikäli koko ohjelman haluaa sulkea, pitää tämä tehdä painamalla ikkunan ruksia.
