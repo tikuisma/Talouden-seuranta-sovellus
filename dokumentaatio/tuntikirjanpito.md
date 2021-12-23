@@ -27,4 +27,9 @@ ________________
 |  | Alustavan käyttöohjeen tekemistä | *2 tuntia* |
 |  | Harjoitustyön koodin kasvatus, koodin laadun tarkistelu, vaatimusmäärittelyn päivitys | *2 tuntia* |
 |  | Repositorion siistiminen | *1 tunti* |
+| 21.12.-21 | Sovelluksen koodin loppuun tekeminen ja muokkaukset, graafisen käyttöliittymän siistiminen, docstring-dokumentaatiota | *2 tuntia* |
+|  | Käyttöohjeen viimeistely | *1 tunti* |
+| 22.12.-21  | Arkkitehtuurikuvauksen viimeistely | *3 tuntia* |
+| 23.12.-21 | 
+|  | README.md:n päivitys ja releasen luonti, kuvien lisäykset, repositorion siistiminen | *1 tunti* |
 |          |                        | *yht. 74 tuntia* |

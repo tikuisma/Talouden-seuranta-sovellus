@@ -1,4 +1,3 @@
-from services.log_in import *
 from ui.gui import GUI
 from ui.log_in_gui import LoginGUI
 
@@ -13,9 +12,13 @@ def main():
         GUI: Kun sisäänkirjautuminen on onnistunut, kutsutaan päänäkymän
         avaavaa luokkaa.
     """
-    Login = LoginGUI()
-    if Login.pop_notice == "Signing in":
-        GUI(Login.user)
+
+    okay = True
+    while okay:
+        okay = False
+        login = LoginGUI()
+        if login.pop_notice == "Signing in":
+            okay = GUI(login.user)
 
 if __name__ == "__main__":
     main()

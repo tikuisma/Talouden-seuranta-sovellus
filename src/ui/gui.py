@@ -15,6 +15,9 @@ class GUI:
 
     def __init__(self, user):
         """Luokan konstruktori, joka luo ikkunanäkymän ja sille annetut tiedot.
+        (Konstruktori on pidempi kuin 20 riviä, koska en näe syytä miksi
+        lähtisin rikkomaan yhtenäistä näkymää, koska tässä kuitenkin
+        määritellään mm. kaikkien sijainnit.)
 
         Args:
             user: sisäänkirjautunut käyttäjä.
@@ -37,7 +40,8 @@ class GUI:
         command=self.income)
         self.add_income_button.place(x=50, y=75)
         self.income_category = ("Salary", "Gift", "Investments", "Others")
-        self.cb = Combobox(self.window, values= self.income_category)
+        self.cb = Combobox(self.window, values= self.income_category,
+        state="readonly")
         self.cb.place(x=50, y=105)
 
         self.add_expense_lbl = Label(self.window, text="Expences:")
@@ -47,7 +51,8 @@ class GUI:
         self.add_expense_button.place(x=300, y=75)
         self.expense_category = ("Groceries","Residential expenses","Hobbies",
         "Pets","Shopping","Fun","Restaurants/bars")
-        self.cb2 = Combobox(self.window, values= self.expense_category)
+        self.cb2 = Combobox(self.window, values= self.expense_category,
+        state="readonly")
         self.cb2.place(x=300, y=105)
 
         self.total_lbl = Label(self.window, text= "Amount:")
@@ -58,14 +63,16 @@ class GUI:
         self.month_lbl = Label(self.window, text="Month:")
         self.month_lbl.place(x=130, y=230)
         self.month_data = (1,2,3,4,5,6,7,8,9,10,11,12)
-        self.cb3 = Combobox(self.window, values= self.month_data)
+        self.cb3 = Combobox(self.window, values= self.month_data,
+        state="readonly")
         self.cb3.place(x=130, y=250)
 
         self.year_lbl = Label(self.window, text="Year:")
         self.year_lbl.place(x=130, y=185)
         self.year_data = (2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028,
         2029, 2030, 2031, 2032)
-        self.cb4 = Combobox(self.window, values= self.year_data)
+        self.cb4 = Combobox(self.window, values= self.year_data,
+        state="readonly")
         self.cb4.place(x=130, y=205)
 
         self.pop_up_field = Label(self.window, text="")
@@ -77,14 +84,16 @@ class GUI:
         self.month_statistics_lbl = Label(self.window, text="Month:")
         self.month_statistics_lbl.place(x=50, y=320)
         self.month_statistics_data = (1,2,3,4,5,6,7,8,9,10,11,12)
-        self.cb5 = Combobox(self.window, values= self.month_statistics_data)
+        self.cb5 = Combobox(self.window, values= self.month_statistics_data,
+        state="readonly")
         self.cb5.place(x=50, y=340)
 
         self.year_statistics_lbl = Label(self.window, text="Year:")
         self.year_statistics_lbl.place(x=250, y=320)
         self.year_statistics_data = (2021, 2022, 2023, 2024, 2025, 2026, 2027,
         2028, 2029, 2030, 2031, 2032)
-        self.cb6 = Combobox(self.window, values= self.year_statistics_data)
+        self.cb6 = Combobox(self.window, values= self.year_statistics_data,
+        state="readonly")
         self.cb6.place(x=250, y=340)
 
         self.statistic_btn = Button(self.window, text="Go to statistics",
@@ -93,7 +102,7 @@ class GUI:
 
         self.top5_btn = Button(self.window, text="Refresh latest",
         command=self.income_expense_table)
-        self.top5_btn.place(x=150, y=550)
+        self.top5_btn.place(x=150, y=570)
 
         self.income_expense_table()
 
@@ -128,19 +137,19 @@ class GUI:
             tulossa/menossa.
         """
 
-        invalid_pop_notice = '''Check that you have chosen all of
-        the categorys, added amount and you are clicking the right button.'''
-        amount_pop_notice = '''Amount needs to be given with numbers.'''
+        invalid_pop_notice = "Check that you have chosen all of the categorys, \nadded amount and you are clicking the right button."
+        amount_pop_notice = "Amount needs to be given with numbers."
         total = self.total_field.get()
         month = self.cb3.get()
         year = self.cb4.get()
+        self.pop_up_field = Label(self.window, text="")
         self.pop_up_field.destroy()
         if category == "" or total == "" or month == "" or year == "":
             self.pop_up_field = Label(self.window, text=invalid_pop_notice)
-            self.pop_up_field.place(x=75, y=5)
+            self.pop_up_field.place(x=1, y=5)
         elif not total.isnumeric():
             self.pop_up_field = Label(self.window, text=amount_pop_notice)
-            self.pop_up_field.place(x=75, y=5)
+            self.pop_up_field.place(x=1, y=5)
         else:
             """Kutsutaan toista oliota, jolle annetaan tieto käyttäjästä,
             onko kyseessä tulo vai meno, valittu kategoria tulosta/menosta,
@@ -159,10 +168,11 @@ class GUI:
 
         st_month = self.cb5.get()
         st_year = self.cb6.get()
+        self.pop_up_field.destroy()
         invalid_pop_notice = "You need to give month and year for the search."
         if st_month == "" or st_year == "":
             self.pop_up_field = Label(self.window, text=invalid_pop_notice)
-            self.pop_up_field.place(x=75, y=5)
+            self.pop_up_field.place(x=20, y=5)
         else:
             Statistics(Database(),self.user, st_month, st_year)
 
@@ -176,6 +186,10 @@ class GUI:
         table.creating_table()
 
     def sign_out(self):
+        """Valittaessa graafisessa käyttöliittymässä Sign out -nappula,
+        graafinen käyttöliittymä palauttaa sisäänkirjautumisnäkymän uudelleen
+        kirjautumista varten.
         """
-        """
+
         self.window.destroy()
+        return True

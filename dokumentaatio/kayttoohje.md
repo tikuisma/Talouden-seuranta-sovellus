@@ -1,13 +1,19 @@
 # Käyttöohje
 
+Lataa projektin viimeisin releasen lähdekoodi valitsemalla *Assets*-osion alta *Source code*.
+
 ## Konfigurointi
+
+Tallennukseen käytettävien tiedostojen nimiä voi halutessaan konfiguroida käynnistyshakemistossa *.env*-tiedostossa. Tiedostot luodaan automaattisesti *data*-hakemistoon, mikäli nämä sieltä vielä puuttuvat. Tiedostojen muodot ovat seuraavat:
+``DATABASE_FILE='database.db'``
+``USERDATABASE_FILE='users.db'``
 
 ## Ohjelman käynnistäminen
 
 Ennen ohjelman käynnistämistä, asenna riippuvuudet komennolla:
 ``poetry install``
 
-Tämän jälkeen ohjelman voi käynnistää komennolla:
+Projektissa ei ole muita alustustoimenpiteitä, joten voit käynnistää sovelluksen komennolla:
 ``poetry run invoke start``
 
 ## Uuden käyttäjän luominen ja sisäänkirjautuminen
@@ -54,3 +60,6 @@ Kun päänäkymässä on täytetty vaadittavat tiedot ja painettu "Go to statist
 
 Mikäli näitä ei olisi, ikkuna avautuu ja ilmoittaa käyttäjälle viestillä, että tietoja ei löytynyt.
 
+### Uloskirjautuminen
+
+Päänäkymän oikeassa ylänurkassa on sign out -nappula. Tätä painamalla käyttäjä uloskirjautuu ja palaudutaan takaisin sisäänkirjautumisnäkymään.

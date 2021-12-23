@@ -1,7 +1,4 @@
-from database_services.user_database import UserDatabase
-
-database = UserDatabase()
-def new_user_creation(username):
+def new_user_creation(username, database):
     """Funktio, jonka avulla luodaan uusi käyttäjä ja tarkistetaan, että
     vaaditut käyttäjävaatimukset täyttyvät sekä luonnin onnistuessa,
     tallennetaan käyttäjänimi tietokantaan.
@@ -23,7 +20,7 @@ def new_user_creation(username):
     if len(username) > 12 or len(username) < 4:
         return "Check your usernames length requirements and try again."
 
-def user_login(username):
+def user_login(username, database):
     """Tarkistetaan sisäänkirjautumistila eli sisäänkirjautumisen onnistuminen
     käyttäjätunnuksella.
 

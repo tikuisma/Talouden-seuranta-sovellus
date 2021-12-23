@@ -1,5 +1,4 @@
 from tkinter import Label
-from tkinter.constants import LEFT
 
 class Table:
     """Luokka, jonka avulla tehdään taulukko päänäkymään, jossa näkyy
@@ -34,14 +33,31 @@ class Table:
             metodia, joka lukee tietokannasta käyttäjänimen mukaiset lisäykset.
         """
 
+        y_coordinate = 430
+        text_class = Label(self.window, text= "Class",fg='black',
+        font=('Arial',11,'bold'), anchor="w")
+        text_class.place(x=40, y=y_coordinate)
+        text_category = Label(self.window, text= "Category",fg='black',
+        font=('Arial',11,'bold'), anchor="w")
+        text_category.place(x=120, y=y_coordinate)
+        text_month = Label(self.window, text= "Month",fg='black',
+        font=('Arial',11,'bold'), anchor="w")
+        text_month.place(x=270, y=y_coordinate)
+        text_year = Label(self.window, text= "Year",fg='black',
+        font=('Arial',11,'bold'), anchor="w")
+        text_year.place(x=340, y=y_coordinate)
+        text_amount = Label(self.window, text= "Amount",fg='black',
+        font=('Arial',11,'bold'), anchor="w")
+        text_amount.place(x=410, y=y_coordinate)
+
         data = self.database.reading_database_for_table(self.user)
         while len(data) < 5:
             data.append(("", "", "", "", ""))
-        x_coord = [40, 120, 270, 320, 390]
-        y_coord = 430
+        x_coord = [40, 120, 270, 340, 410]
+        y_coord = 450
         for i in range(5):
             for j in range(len(data[0])):
-                self.table = Label(self.window, text=data[i][j], width=20,
-                fg='black', font=('Arial',10,'bold'), anchor="w")
-                self.table.place(x=x_coord[j], y=y_coord)
+                table = Label(self.window, text=data[i][j], width=20,
+                fg='black', font=('Arial',10), anchor="w")
+                table.place(x=x_coord[j], y=y_coord)
             y_coord += 20

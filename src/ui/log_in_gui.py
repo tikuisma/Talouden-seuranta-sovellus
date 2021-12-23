@@ -1,5 +1,6 @@
 from tkinter import Label, Button, Tk, Entry
 from services.log_in import new_user_creation, user_login
+from database_services.user_database import UserDatabase
 
 class LoginGUI:
     """Luokka, jonka avulla luodaan käyttöliittymän sisäänkirjautumisnäkymä,
@@ -11,6 +12,7 @@ class LoginGUI:
         """
 
         self.user = ""
+        self.userdatabase = UserDatabase()
         self.log_in_screen = Tk()
         self.log_in_screen.title("Log in")
         self.log_in_screen.geometry("500x400+10+10")
@@ -43,7 +45,7 @@ class LoginGUI:
         """
 
         self.user = str(self.username_field.get())
-        self.pop_notice = new_user_creation(self.user)
+        self.pop_notice = new_user_creation(self.user, self.userdatabase)
 
         """self.pop_notice: Palauttaa tiedon käyttäjälle graafisen
         käyttöliittymän sisäänkirjautumisnäkymään tekstin joko onnistuneesta
@@ -65,7 +67,7 @@ class LoginGUI:
 
         self.user = str(self.username_field.get())
         self.pop_up_field.destroy()
-        self.pop_notice = user_login(self.user)
+        self.pop_notice = user_login(self.user, self.userdatabase)
         if self.pop_notice == "Signing in":
             self.log_in_screen.destroy()
         else:

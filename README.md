@@ -29,7 +29,7 @@ Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohje
 - Koodin laadun pystyy tarkastamaan:
 	1. ensin komento: ```poetry shell```
 	2. komento: ```poetry run invoke lint```
-- Koodin laadun tämänhetkinen pisteytys on 9.48/10 
+- Koodin laadun pisteytys on 9.61/10. 
 
 ### Ohjelman testaus:
 
@@ -40,8 +40,10 @@ Oman sovelluksen teko on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohje
 - Testikattavuusraportin voi generoida komennolla: ```poetry run invoke coverage-report```
 - Raportti generoituu htmlcov-hakemistoon.
 
-### Release
+### Releaset
 
 [Viikko 5 release](https://github.com/tikuisma/ot-harjoitustyo/releases/tag/viikko5)
 
 [Viikko 6 release](https://github.com/tikuisma/ot-harjoitustyo/releases/tag/viikko6)
+
+[Loppupalautuksen release]()
