@@ -34,7 +34,7 @@ Onnistuneen sisäänkirjautumisen jälkeen avautuu päänäkymä:
 
 ![Screenshot from 2021-12-23 18-22-22](https://user-images.githubusercontent.com/93583969/147267249-98a4b5cd-ba58-45cd-8915-99c902e64d4a.png)
 
-Tässä voi lisätä vetovalikoista tulon tai menon, syöttää sille summan, valita vuoden ja kuukauden sekä tämän jälkeen painaa joko "save income"- tai "save expense"-painiketta riippuen kumpaa ollaan tallentamassa, tästä avautuu uusi tallentamisen varmistus -näkymä.
+Tässä voi lisätä vetovalikoista tulon tai menon kategorian, syöttää sille summan, valita vuoden ja kuukauden sekä tämän jälkeen painaa joko "save income"- tai "save expense"-painiketta riippuen kumpaa ollaan tallentamassa, tästä avautuu uusi tallentamisen varmistus -näkymä.
 
 ![saveincome](https://user-images.githubusercontent.com/93583969/146052676-6b045501-4e96-4097-b356-2370317c8d32.png)
 
