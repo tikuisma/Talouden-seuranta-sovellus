@@ -33,7 +33,7 @@ Tässä services-kansion ja sen liitoksissa olevan ohjelman muiden osien suhdett
 ## Tietojen pysyväistallennus
 Tietojen pysyväistallennuksessa on käytetty ainoastaan SQL:n tietokantoja. Pakkauksen *database_services* luokat ``UserDatabase`` ja ``Database`` huolehtivat tietojen tallentamisesta. Molemmat luokat tallentavat tietonsa SQLite3-tietokantaan.
 
-### Tiedostot
+### Tietokannat
 
 Sovellus tallentaa käyttäjät ja käyttäjien lisäämät tiedot eri tietokantoihin.
 Sovelluksen juureen sijoitettu konfiguraatiotiedosto .env määrittelee tiedostojen nimet ja polut.
